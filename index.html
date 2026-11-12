@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Redyz Lab · Bienvenida</title>
+<meta name="description" content="Redyz Lab by Marypaz Cadavid: diseño, contenido y estrategia para tu marca. Cotiza por WhatsApp.">
+<meta property="og:title" content="Redyz Lab · Bienvenida">
+<meta property="og:description" content="Diseño, contenido y estrategia para tu marca. Cotiza por WhatsApp.">
+<meta property="og:image" content="7018bd68d159a1c09340d9d4076ad9f8.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap">
+<style>
+body{margin:0;background:#FCFBFE}
+a{color:#3B3355}a:hover{color:#3B3355}
+.grano{background-image:radial-gradient(rgba(29,24,48,.08) 1px,transparent 1px);background-size:3px 3px}
+@keyframes holo{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+@keyframes brilla{0%,100%{opacity:.35;transform:scale(.8)}50%{opacity:1;transform:scale(1)}}
+.holo-anim{background-size:250% 250%;animation:holo 10s ease-in-out infinite}
+.brilla{animation:brilla 3.4s ease-in-out infinite}
+.btn{transition:transform .2s ease, box-shadow .2s ease}
+.btn:hover{transform:translateY(-2px)}
+:focus-visible{outline:3px solid #9A88DC;outline-offset:3px}
+/* fondo líquido holográfico */
+.liquido{position:absolute;inset:-10%;filter:blur(50px);opacity:.9;pointer-events:none}
+.gota{position:absolute;border-radius:42% 58% 63% 37% / 41% 44% 56% 59%;will-change:transform,border-radius}
+.g1{width:460px;height:420px;left:-8%;top:2%;background:radial-gradient(circle at 30% 30%,#FFF4FA,#FBE3F0 70%);animation:fluye1 9s ease-in-out infinite,forma 5s ease-in-out infinite}
+.g2{width:420px;height:460px;right:-12%;top:18%;background:radial-gradient(circle at 60% 40%,#F8F5FF,#ECE6FD 70%);animation:fluye2 11s ease-in-out infinite,forma 6s ease-in-out infinite reverse}
+.g3{width:480px;height:440px;left:-14%;top:44%;background:radial-gradient(circle at 40% 60%,#F3FCFB,#E1F5F3 75%);animation:fluye3 10s ease-in-out infinite,forma 7s ease-in-out infinite}
+.g4{width:400px;height:400px;right:-10%;top:60%;background:radial-gradient(circle at 50% 50%,#FFFBF3,#FCEAF3 75%);animation:fluye1 12s ease-in-out infinite reverse,forma 6s ease-in-out infinite reverse}
+.g5{width:440px;height:420px;left:10%;top:78%;background:radial-gradient(circle at 50% 40%,#F6F2FF,#E6F1FC 75%);animation:fluye2 10s ease-in-out infinite reverse,forma 7s ease-in-out infinite}
+.giro{position:absolute;left:50%;top:50%;width:160%;height:160%;margin:-80% 0 0 -80%;background:conic-gradient(from 0deg,rgba(251,227,240,.25),rgba(236,230,253,.25),rgba(225,245,243,.25),rgba(255,247,234,.25),rgba(251,227,240,.25));animation:gira 16s linear infinite}
+@keyframes fluye1{0%,100%{transform:translate(0,0) rotate(0)}33%{transform:translate(170px,110px) rotate(50deg)}66%{transform:translate(-60px,220px) rotate(-40deg)}}
+@keyframes fluye2{0%,100%{transform:translate(0,0) rotate(0)}33%{transform:translate(-190px,160px) rotate(-60deg)}66%{transform:translate(90px,-130px) rotate(40deg)}}
+@keyframes fluye3{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(220px,-160px) rotate(70deg)}}
+@keyframes forma{0%,100%{border-radius:42% 58% 63% 37% / 41% 44% 56% 59%}33%{border-radius:63% 37% 41% 59% / 58% 36% 64% 42%}66%{border-radius:37% 63% 52% 48% / 46% 62% 38% 54%}}
+@keyframes gira{to{transform:rotate(360deg)}}
+/* brillo que barre el vidrio */
+.vidrio{position:relative;overflow:hidden}
+.vidrio::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,rgba(255,255,255,0) 35%,rgba(255,255,255,.55) 50%,rgba(255,255,255,0) 65%);transform:translateX(-120%);animation:barre 7s ease-in-out infinite;pointer-events:none}
+@keyframes barre{0%,60%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+@media (prefers-reduced-motion: reduce){.holo-anim,.brilla,.gota,.giro,.vidrio::after{animation:none}}
+</style>
+</head>
+<body>
+<div style="position: relative; min-height: 100vh; width: 100%; box-sizing: border-box; overflow: hidden; font-family: 'Manrope', system-ui, sans-serif; color: #3B3355; line-height: 1.55; background: #FCFBFE; display: flex; justify-content: center; padding: 26px 20px 44px">
+<div class="liquido" aria-hidden="true">
+  <div class="giro"></div>
+  <div class="gota g1"></div>
+  <div class="gota g2"></div>
+  <div class="gota g3"></div>
+  <div class="gota g4"></div>
+  <div class="gota g5"></div>
+</div>
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; top: 0; height: 640px; background: linear-gradient(to bottom, rgba(252,251,254,0.92) 0%, rgba(252,251,254,0.75) 60%, rgba(252,251,254,0) 100%); pointer-events: none"></div>
+<div class="grano" aria-hidden="true" style="position: absolute; inset: 0; opacity: 0.22; pointer-events: none"></div>
+
+<main style="position: relative; width: 100%; max-width: 420px; display: flex; flex-direction: column; align-items: center">
+
+  <!-- Bienvenida -->
+  <p style="margin: 0; display: flex; align-items: center; gap: 10px; font-weight: 300; font-size: 12px; letter-spacing: 0.26em; text-transform: uppercase; color: #5B5474">
+    <svg class="brilla" aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="#A895E6"><path d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0z"></path></svg>
+    Te doy la bienvenida
+    <svg class="brilla" aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="#E08EBD"><path d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0z"></path></svg>
+  </p>
+
+  <!-- Foto que se funde con el fondo -->
+  <div style="margin-top: 14px; width: 100%; display: flex; justify-content: center">
+    <img src="7018bd68d159a1c09340d9d4076ad9f8.jpg" alt="Marypaz, fundadora de Redyz Lab, con bata blanca y gafas holográficas" style="display: block; width: 100%; max-width: 390px; height: 480px; object-fit: cover; object-position: 50% 0%; -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #000 10%, #000 55%, rgba(0,0,0,0.55) 74%, rgba(0,0,0,0) 96%), linear-gradient(to right, rgba(0,0,0,0) 0%, #000 16%, #000 84%, rgba(0,0,0,0) 100%); -webkit-mask-composite: source-in; mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #000 10%, #000 55%, rgba(0,0,0,0.55) 74%, rgba(0,0,0,0) 96%), linear-gradient(to right, rgba(0,0,0,0) 0%, #000 16%, #000 84%, rgba(0,0,0,0) 100%); mask-composite: intersect">
+  </div>
+
+  <!-- Título con efecto espejo -->
+  <div style="margin-top: -96px; position: relative; display: flex; flex-direction: column; align-items: center">
+    <h1 class="holo-anim" style="margin: 0; font-family: 'Unbounded', system-ui, sans-serif; font-weight: 800; font-size: 44px; line-height: 1; letter-spacing: 0.02em; background-image: linear-gradient(100deg, #C2569A 0%, #7E68D4 38%, #2F8E8A 72%, #C2569A 100%); -webkit-background-clip: text; background-clip: text; color: transparent">REDYZ LAB</h1>
+    <div aria-hidden="true" class="holo-anim" style="font-family: 'Unbounded', system-ui, sans-serif; font-weight: 800; font-size: 44px; line-height: 1; letter-spacing: 0.02em; transform: scaleY(-1); margin-top: 3px; background-image: linear-gradient(100deg, #E08EBD 0%, #A895E6 38%, #62C2BE 72%, #E08EBD 100%); -webkit-background-clip: text; background-clip: text; color: transparent; opacity: 0.45; -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 60%); mask-image: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 60%)">REDYZ LAB</div>
+  </div>
+
+  <!-- Nombre -->
+  <div style="margin-top: -18px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px">
+    <p style="margin: 0; font-weight: 300; font-size: 13px; letter-spacing: 0.26em; text-transform: uppercase; color: #5B5474">Hola, soy</p>
+    <h2 style="margin: 0; font-family: 'Unbounded', system-ui, sans-serif; font-weight: 700; font-size: 22px; line-height: 1.15; color: #3B3355">Marypaz Cadavid</h2>
+    <p style="margin: 2px 0 0; font-size: 14px; font-weight: 600; color: #5B5474">Diseño · Contenido · Estrategia</p>
+  </div>
+
+  <!-- Bienvenida en vidrio -->
+  <section class="vidrio" style="margin-top: 24px; width: 100%; box-sizing: border-box; padding: 24px 22px; border-radius: 26px; background: linear-gradient(160deg, rgba(255,255,255,0.62), rgba(255,255,255,0.34)); backdrop-filter: blur(22px) saturate(160%); -webkit-backdrop-filter: blur(22px) saturate(160%); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,0.9), inset 0 1px 0 #fff, 0 20px 46px rgba(110,69,217,0.16); text-align: center">
+    <p style="margin: 0; font-weight: 300; font-size: 12px; letter-spacing: 0.26em; text-transform: uppercase; color: #5B5474">Sobre mí</p>
+    <p style="margin: 10px 0 0; font-size: 16px; font-weight: 500; color: #3B3355">Tengo 24 años y más de 6 de experiencia en el mundo creativo.</p>
+    <p style="margin: 10px 0 0; font-size: 15px; color: #5B5474">En mi laboratorio desarrollo piezas audiovisuales, impresos únicos y campañas a la medida de cada negocio. Me gusta conocer a fondo a cada cliente para crear la fórmula exacta que haga destacar su marca.</p>
+    <p style="margin: 14px 0 0; font-size: 15px; font-weight: 600; color: #3B3355">Cuéntame qué necesitas y te preparo tu cotización a la medida.</p>
+    <a class="btn" href="https://wa.me/573105085540?text=Hola%20Marypaz%2C%20vengo%20de%20Instagram%20y%20quiero%20cotizar%20un%20servicio%20con%20Redyz%20Lab" target="_blank" rel="noopener" style="margin-top: 20px; display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 0 24px; border-radius: 999px; text-decoration: none; font-weight: 800; font-size: 15px; color: #3B3355; background: linear-gradient(135deg, #F3EEFF 0%, #FDEDF5 55%, #E9F9F8 100%); box-shadow: inset 0 0 0 2px #fff, 0 0 0 1px rgba(149,114,234,0.35), 0 14px 30px rgba(149,114,234,0.22)">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5l1.3-4.1A8.5 8.5 0 1 1 8 19.4z"></path><path d="M9 8.6c0 3.3 2.8 6.4 6.3 6.4l1.1-1.4-1.9-1-1 .8c-1.2-.5-2.3-1.6-2.8-2.8l.8-1-1-1.9z"></path></svg>
+      Cotiza por WhatsApp
+    </a>
+  </section>
+
+  <!-- Separador holo -->
+  <div aria-hidden="true" class="holo-anim" style="margin: 30px 0 22px; width: 70%; height: 4px; border-radius: 4px; background-image: linear-gradient(115deg, #FDE8F2 0%, #EFE8FD 26%, #E0F7F6 52%, #FFF8EC 74%, #F5EBFD 100%); box-shadow: 0 0 0 1px #fff, 0 4px 14px rgba(149,114,234,0.18)"></div>
+
+  <!-- Especial de Navidad -->
+  <section class="vidrio" style="width: 100%; box-sizing: border-box; padding: 26px 22px; border-radius: 30px; background: linear-gradient(165deg, rgba(255,255,255,0.66), rgba(255,255,255,0.36)); backdrop-filter: blur(22px) saturate(160%); -webkit-backdrop-filter: blur(22px) saturate(160%); box-shadow: inset 0 0 0 2px rgba(255,255,255,0.95), 0 22px 46px rgba(110,69,217,0.18); display: flex; flex-direction: column; align-items: center; text-align: center">
+    <span style="display: inline-block; padding: 5px 12px; border-radius: 999px; background: #fff; color: #6A55C2; box-shadow: inset 0 0 0 1.5px #E6DEFA; font-size: 11px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase">Especial de Navidad</span>
+    <h3 style="margin: 12px 0 0; font-family: 'Unbounded', system-ui, sans-serif; font-weight: 700; font-size: 24px; line-height: 1.15; color: #3B3355">Agendas web</h3>
+    <p style="margin: 10px 0 0; font-size: 15px; color: #5B5474">Tu agenda de citas online, automática y personalizada con tu marca. Tus clientas eligen día y hora, y la reserva te llega directo al WhatsApp.</p>
+    <a class="btn" href="https://redyz-agendas-navidenas.netlify.app" target="_blank" rel="noopener" style="margin-top: 20px; display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; box-sizing: border-box; min-height: 50px; padding: 0 20px; border-radius: 999px; text-decoration: none; font-weight: 800; font-size: 15px; color: #3B3355; background: #fff; box-shadow: inset 0 0 0 1.5px #E6DEFA, 0 12px 26px rgba(110,69,217,0.14)">
+      Conocer las agendas
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
+    </a>
+  </section>
+
+  <!-- Firma -->
+  <p style="margin: 30px 0 0; font-weight: 300; font-size: 13px; letter-spacing: 0.08em; color: #5B5474">Redyz Lab · By <b style="font-weight: 600; color: #6A55C2">Marypaz Cadavid</b></p>
+
+</main>
+</div>
+</body>
+</html>
